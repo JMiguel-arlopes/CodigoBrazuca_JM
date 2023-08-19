@@ -1,19 +1,16 @@
 def main(): 
     num = int(input('Escolha um Número: '))
-
-    for i, n in enumerate(tabuada(num)):
+    results = tabuada(num)
+    for i, n in enumerate(results):
         print(f'{num} x {i+1} = {n}')
     
-
 def tabuada(n):
     count = 1
     lista = []
-
-    while True:
-        if count > 10:
-            return lista
-        
+    while count <= 10:    
         lista.append(n * count)
         count += 1
+
+    return lista
 
 main()
