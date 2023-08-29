@@ -3,7 +3,7 @@
 def main():
     size = int(input('Qual o tamanho da sua lista númerica? '))
     result = ordernar(size)
-    print(f'Sua lista é {result.split()}')
+    print(f'Sua lista é {result}')
     result.sort()
     first = result[0]
     last = result[len(result)-1]
