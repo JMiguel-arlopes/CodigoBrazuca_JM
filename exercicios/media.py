@@ -1,11 +1,22 @@
 def main():
-    nota_1 = float(input('Qual sua primeira nota? '))
-    nota_2 = float(input('Qual sua segunda nota? '))
-
-    mediaPronta = media(nota_1, nota_2)
+    size = int(input('Digite qauntas notas você tem: '))
+    notas = listagem(size)
+    total = sum(notas)
+    mediaPronta = media(total, len(notas))
+    
+    print('-' *35)
+    print(f'Dentre suas notas {notas}')
     print('Sua média é', mediaPronta)
+    print('-' *35)
 
-def media(x, y):
-    return (x + y)/2
+def listagem(size):
+    lista = []
+    for i in range(size):
+        num = int(input(f'Digite sua {i+1} Nota: '))
+        lista.append(num)
+    return lista
+
+def media(total, lista):
+    return total/lista
 
 main()
