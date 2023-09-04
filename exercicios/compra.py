@@ -1,9 +1,10 @@
-conta = float(input('Quanto deu sua COnta: '))
-pagamento = int(input("""Como deseja realizar sua compra?
-[1] A vista no Dinheiro
-[2] A vista no cartão
-[3] Parcelado 5x
-[4] Parcelado 10x"""))
+def main():
+    conta = float(input('Quanto deu sua COnta: '))
+    pagamento = int(input("""Como deseja realizar sua compra?
+    [1] A vista no Dinheiro
+    [2] A vista no cartão
+    [3] Parcelado 5x
+    [4] Parcelado 10x"""))
 
 
 match pagamento:
